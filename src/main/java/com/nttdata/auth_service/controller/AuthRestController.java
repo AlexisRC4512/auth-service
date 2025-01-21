@@ -23,7 +23,6 @@ public class AuthRestController {
 
     @PostMapping("/auth/register")
     public ResponseEntity<String> register(@RequestBody String userName) {
-        // Persist user to some persistent storage
         System.out.println("Info saved...");
 
         return new ResponseEntity<String>("Registered", HttpStatus.OK);
